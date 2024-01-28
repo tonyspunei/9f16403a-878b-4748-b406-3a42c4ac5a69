@@ -35,4 +35,4 @@ To run the app in development mode, execute the following command:
 npm run dev
 ```
 
-This will start a development server, and you can view the app in your browser by navigating to `http://localhost:3000`.
+This will start a development server, and you can view the app in your browser by navigating to `http://localhost:5173`.
