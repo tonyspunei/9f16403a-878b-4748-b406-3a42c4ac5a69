@@ -60,6 +60,11 @@ function App() {
     setCart(currentCart => currentCart.filter(event => event._id !== eventIdRemove))
   }
 
+  const formatEventDate = (dateStr) => {
+    const date = new Date(dateStr);
+    return `${date.toLocaleDateString('en-GB').replaceAll('/', '.')}, ${date.toLocaleTimeString('en-GB')}`;
+  }
+
   return (
     <div>
       <header>
@@ -142,8 +147,8 @@ function App() {
                           </svg>
                           <span>{event.venue.name}</span>
                         </a>
-                        <p>| Starts: {event.startTime}</p>
-                        <p>| Ends: {event.endTime}</p>
+                        <p>| Starts: {formatEventDate(event.startTime)}</p>
+                        <p>| Ends: {formatEventDate(event.endTime)}</p>
                       </div>
 
                       <button onClick={() => handleAddToCart(event)} className='add-to-cart'>
