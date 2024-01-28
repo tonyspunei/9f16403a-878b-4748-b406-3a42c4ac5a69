@@ -14,7 +14,7 @@ To install the Event App, follow these steps:
 
 1. Clone the repository to your local machine:
 ```bash
-git clone https://your-repository-url.git
+git clone https://github.com/tonyspunei/9f16403a-878b-4748-b406-3a42c4ac5a69.git
 ```
 
 2. Navigate to the project directory:
